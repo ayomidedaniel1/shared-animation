@@ -28,11 +28,11 @@ const cityItem = ({ item }) => (
 const HomeScreen = () => {
   const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 1800);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1800);
+  }, []);
 
   if (loading) {
     return <FlatList
